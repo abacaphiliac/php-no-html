@@ -9,6 +9,7 @@ Safely encode content for rendering in an HTML document.
 
 ## Brief XSS Mitigation Guide
 A quote from (Paragon Initiative's blog)[https://paragonie.com/blog/2015/06/preventing-xss-vulnerabilities-in-php-everything-you-need-know]:
+
 1. If your framework has a templating engine that offers automatic contextual filtering, use that.
 1. `echo htmlentities($string, ENT_QUOTES | ENT_HTML5, 'UTF-8');` is a safe and effective way to stop all XSS attacks on a UTF-8 encoded web page, but doesn't allow any HTML.
 1. If your requirements allow you to use Markdown instead of HTML, don't use HTML.
