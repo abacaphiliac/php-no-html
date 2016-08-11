@@ -1,0 +1,33 @@
+{
+  "name": "abacaphiliac/php-no-html",
+  "description": "Safely encode content for rendering in an HTML document.",
+  "type": "library",
+  "keywords": [
+    "filter",
+    "html",
+    "xss"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Timothy Younger",
+      "email": "abacaphiliac@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "jakub-onderka/php-parallel-lint": "^0.9",
+    "phing/phing": "^2.14",
+    "phpunit/phpunit": "^5.4|^4.8",
+    "squizlabs/php_codesniffer": "^2.2",
+    "johnkary/phpunit-speedtrap": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "NoHtml\\": "src/NoHtml"
+    }
+  },
+  "minimum-stability": "stable"
+}
