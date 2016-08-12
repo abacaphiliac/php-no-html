@@ -25,9 +25,9 @@
     "johnkary/phpunit-speedtrap": "^1.0"
   },
   "autoload": {
-    "psr-4": {
-      "NoHtml\\": "src/NoHtml"
-    }
+    "files": [
+      "src/NoHtml/NoHtml.php"
+    ]
   },
   "minimum-stability": "stable"
 }
