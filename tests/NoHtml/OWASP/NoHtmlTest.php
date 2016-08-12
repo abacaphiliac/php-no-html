@@ -2,8 +2,6 @@
 
 namespace PhpNoHtmlTest;
 
-use NoHtml\NoHtml;
-
 class NoHtmlTest extends \PHPUnit_Framework_TestCase
 {
     /**
@@ -31,7 +29,7 @@ class NoHtmlTest extends \PHPUnit_Framework_TestCase
     {
         self::assertNotEmpty($value);
         
-        $actual = NoHtml::filter($value);
+        $actual = \NoHtml\noHtml($value);
         
         self::assertNotEmpty($actual);
         self::assertNotContains('<', $actual);
